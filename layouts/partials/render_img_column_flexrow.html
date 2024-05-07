@@ -78,8 +78,8 @@
                             orig_name="{{ $filename }}"
                             href="{{ .full.RelPermalink }}">
                         <div id="image_number_{{ .index }}" class="gallery-item-marker"></div>
-                        <img src="{{ .thumb.RelPermalink }}"
-                            {{- with .alt }} alt="{{ . }}"{{ end }}>
+                        <img src="{{ .thumb.RelPermalink }}" style="border-radius: 20px;"
+                       {{- with .alt }} alt="{{ . }}"{{ end }}>
                         {{- with .description }}
                         <div class="invis_desc">{{ (. | markdownify) | safeHTMLAttr }}</div>
                         {{- end }}
